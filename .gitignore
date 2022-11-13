@@ -1,1 +1,4 @@
 data/*.csv
+mapreduce/*.csv
+*.crc
+_SUCCESS
