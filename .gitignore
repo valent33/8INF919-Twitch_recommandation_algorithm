@@ -1,4 +1,5 @@
 data/*.csv
 mapreduce/*.csv
+graph/*.csv
 *.crc
 _SUCCESS
