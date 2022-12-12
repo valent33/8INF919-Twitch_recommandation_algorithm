@@ -7,10 +7,6 @@ def similarity(user1, user2):
     # return the similarity
     return np.dot(user1, user2) / (np.linalg.norm(user1) * np.linalg.norm(user2))
 
-def recommandation(matrix, user):
-    # calculate the recommandation for a user
-    return np.dot(matrix, user) / np.linalg.norm(user)
-
 def recommand_category(user, df_pivot_category, matrix_category):
     # get the user index
     user_index = df_pivot_category.index.get_loc(user)
