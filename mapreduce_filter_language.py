@@ -4,6 +4,10 @@
 # explode column viewer
 # group by ['viewer', 'langage']
 
+# python mapreduce_filter_language.py <language>
+# python mapreduce_filter_language.py fr
+# python mapreduce_filter_language.py en
+
 import pandas as pd
 import sys
 

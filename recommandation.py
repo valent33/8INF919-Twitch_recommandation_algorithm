@@ -1,3 +1,5 @@
+# python recommandation.py <username> <category or streamer>
+
 import pandas as pd
 import numpy as np
 import sys
