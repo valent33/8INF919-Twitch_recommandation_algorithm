@@ -57,9 +57,8 @@ def recommand_streamer(user, df_pivot_streamer, matrix_streamer):
     similarities = []
     for i in range(len(matrix_streamer)):
         similarities.append(similarity(user_matrix, matrix_streamer[i]))
-    # take 10000 randomly out of 100000 most similar users
+    # get the most similar users
     most_similar_users = np.argsort(similarities)[::-1][:10000]
-    # most_similar_users = np.random.choice(most_similar_users, 10000)
     # naive recommandation system that loops through the most similar users and add the streamers to a list
     recommandation = {}
     for i in most_similar_users:
